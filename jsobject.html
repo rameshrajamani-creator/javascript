@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var person = {
+            fname:"Ramesh",
+            lname:"Rajamani",
+            work:"Software Engineer",
+            company:"TechMahindra",
+            position:"TechManager",
+            father:"Rajamani",
+            mother:"Ananthavalli",
+            spouse:"Lakshmi Krishnamoorthy",
+            daughter:"Shivani"
+        };
+       // console.log(person.lname);
+       console.log(person["fname"]);
+       console.log(person["lname"]);
+       console.log(person["work"]);
+       console.log(person["company"]);
+       console.log(person["position"]);
+       console.log(person["father"]);
+       console.log(person["mother"]);   
+       console.log(person["spouse"]); 
+       console.log(person["daughter"]); 
+       for(a in person) {
+           document.write(a);
+           document.write('  :');
+           document.write(person[a]);
+           document.write("<br>");    
+       }
+    </script>
+</body>
+</html>
