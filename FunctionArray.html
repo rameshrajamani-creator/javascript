@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick=addAtStart()>Add at the start</button>
+    <button onclick=addAtEnd()>Add at the End</button>
+    <button onclick=clearArray()>Clear</button>
+    <button onclick=resetArray()>Reset</button>
+    <div id="demo"></div>
+     <script> 
+           var users = ["Ravi","Murali","Krishna"];
+           function displayUsers() {
+           var results = "";
+           for(i =0;i<users.length;i++) {
+                 results = results + users[i] + "<br>";
+            }  
+           document.getElementById("demo").innerHTML = results;
+           }       
+
+           function addAtStart() {
+               users.unshift("Ramesh");
+               displayUsers();
+           }
+
+           function addAtEnd() {
+               users.push("Kumar");
+               displayUsers();
+           }
+
+           function clearArray() {
+            users = [];
+            displayUsers();
+           }
+
+           function resetArray() {
+            users = ["Ravi","Murali","Krishna"];
+            displayUsers();
+           }
+     </script>
+</body>
+</html>

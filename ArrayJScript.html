@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+           var users = ["Ravi","Murali","Krishna"];
+         //  users[3] = "Ram";
+         //  users.push("Kiran"); // Added a value at the end of the array
+         //  users.unshift("Ramesh"); // Added a value to the start of the array
+          // users.sort();
+          users.splice(1,0,"Guru"); // Insert inbetween array
+          users.pop();  // Remove the last value
+          users.shift(); // Remove the first value
+          users.splice(2,1); // Remove the specified index.
+
+
+
+           for(i =0;i<users.length;i++) {
+               
+                 document.write(users[i]+"<br>");
+            }  
+    </script>
+</body>
+</html>
